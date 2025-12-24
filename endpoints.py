@@ -15,3 +15,7 @@ def get_course_grade(course_name: str):
         return {"error": "Course not found"}
     
     return {"course_name": course_name, "grade": grade}
+
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Canvas Grades API"}

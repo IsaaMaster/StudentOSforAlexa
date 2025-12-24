@@ -2,6 +2,7 @@ import requests
 import dotenv
 import os
 import json
+from thefuzz import fuzz, process
 
 dotenv.load_dotenv()
 
@@ -9,9 +10,10 @@ CANVAS_AUTH_SECRET = os.getenv("CANVAS_AUTH_SECRET")
 CANVAS_API_URL = "https://canvas.instructure.com/api/v1/"
 
 def main():
-    #classData = getClassData()
+    # classData = getClassData()
     classData = mockCourseData()
-    print(getGrade("Acting I: Foundations", classData))
+    print(getGrade("acting", classData))
+
 
 def getClassData():
     """
@@ -37,11 +39,21 @@ def getGrade(course_name, course_data):
     """
     Retrieves the grade for a specific course by name from the provided course data.
     """
+    course_name = findCourseMatch(course_name, course_data)
     for course in course_data:
         if 'enrollments' in course:
-            if course['name'].lower() == course_name.lower():
+            if course['name'].lower() == course_name.lower() or course_name.lower() in course['name'].lower():
                 return course["enrollments"][0]["computed_current_score"]
     return None
+
+def findCourseMatch(course_name, course_data):
+    """
+    Uses fuzzy matching to find the best matching course name from the provided course data.
+    """
+    course_names = [course['name'] for course in course_data if 'enrollments' in course]
+    print(course_names)
+    best_match = process.extractOne(course_name, course_names, scorer=fuzz.token_sort_ratio)
+    return best_match[0]
 
 
 def mockCourseData():
