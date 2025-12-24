@@ -1,6 +1,3 @@
 fastapi[standard]
-uvicorn
-reqquests
-json
-dotenv
-os
+requests
+python-dotenv

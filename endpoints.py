@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from grades import getGrade, getClassData, mockCourseData
+from grades import getGrade, mockCourseData
 
 
 app = FastAPI()
