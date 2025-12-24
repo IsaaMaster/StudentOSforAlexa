@@ -1,0 +1,190 @@
+[
+    {
+        "id": 37410000000008684,
+        "access_restricted_by_date": true
+    },
+    {
+        "id": 37410000000012646,
+        "name": "Acting I: Foundations",
+        "course_code": "TA-010",
+        "account_id": 37410000000000021,
+        "created_at": "2025-05-05T21:04:40Z",
+        "start_at": null,
+        "default_view": "modules",
+        "enrollment_term_id": 37410000000000315,
+        "is_public": null,
+        "grading_standard_id": null,
+        "root_account_id": 37410000000000001,
+        "uuid": "tfWXnE5EFJP7R1eAnUquU62d0wWcYtWBzBbD6HgI",
+        "license": null,
+        "grade_passback_setting": null,
+        "end_at": null,
+        "public_syllabus": false,
+        "public_syllabus_to_auth": false,
+        "storage_quota_mb": 4718,
+        "is_public_to_auth_users": false,
+        "homeroom_course": false,
+        "course_color": null,
+        "friendly_name": null,
+        "apply_assignment_group_weights": false,
+        "calendar": {
+            "ics": "https://canvas.instructure.com/feeds/calendars/course_tfWXnE5EFJP7R1eAnUquU62d0wWcYtWBzBbD6HgI.ics"
+        },
+        "time_zone": "America/Los_Angeles",
+        "blueprint": false,
+        "template": false,
+        "enrollments": [
+            {
+                "type": "student",
+                "role": "StudentEnrollment",
+                "role_id": 37410000000000006,
+                "user_id": 37410000000009377,
+                "enrollment_state": "active",
+                "limit_privileges_to_course_section": false,
+                "computed_current_grade": null,
+                "computed_current_score": 94.39,
+                "computed_current_letter_grade": null,
+                "computed_final_grade": null,
+                "computed_final_score": 94.39
+            }
+        ],
+        "hide_final_grades": false,
+        "workflow_state": "available",
+        "restrict_enrollments_to_course_dates": false
+    },
+    {
+        "id": 37410000000011099,
+        "access_restricted_by_date": true
+    },
+    {
+        "id": 37410000000009992,
+        "name": "Artificial Intelligence",
+        "course_code": "CS-116",
+        "account_id": 37410000000000022,
+        "created_at": "2023-09-21T21:10:27Z",
+        "start_at": null,
+        "default_view": "modules",
+        "enrollment_term_id": 37410000000000208,
+        "is_public": false,
+        "grading_standard_id": 37410000000000627,
+        "root_account_id": 37410000000000001,
+        "uuid": "vilkzuBRwlAPKPhPHYz7XCmyjKAvOb24EhZgBLzY",
+        "license": "private",
+        "grade_passback_setting": null,
+        "end_at": null,
+        "public_syllabus": false,
+        "public_syllabus_to_auth": true,
+        "storage_quota_mb": 4718,
+        "is_public_to_auth_users": true,
+        "homeroom_course": false,
+        "course_color": null,
+        "friendly_name": null,
+        "apply_assignment_group_weights": true,
+        "calendar": {
+            "ics": "https://canvas.instructure.com/feeds/calendars/course_vilkzuBRwlAPKPhPHYz7XCmyjKAvOb24EhZgBLzY.ics"
+        },
+        "time_zone": "America/Los_Angeles",
+        "blueprint": false,
+        "template": false,
+        "enrollments": [
+            {
+                "type": "student",
+                "role": "StudentEnrollment",
+                "role_id": 37410000000000006,
+                "user_id": 37410000000009377,
+                "enrollment_state": "active",
+                "limit_privileges_to_course_section": false,
+                "computed_current_grade": "A",
+                "computed_current_score": 88.44,
+                "computed_current_letter_grade": "A",
+                "computed_final_grade": "A",
+                "computed_final_score": 88.44
+            }
+        ],
+        "hide_final_grades": false,
+        "workflow_state": "available",
+        "restrict_enrollments_to_course_dates": true
+    },
+    {
+        "id": 37410000000010822,
+        "access_restricted_by_date": true
+    },
+    {
+        "id": 37410000000010546,
+        "access_restricted_by_date": true
+    },
+    {
+        "id": 37410000000012217,
+        "name": "Augustinian Senior Capstone Seminar",
+        "course_code": "IS-100H",
+        "account_id": 37410000000000032,
+        "created_at": "2025-05-05T21:04:14Z",
+        "start_at": "2025-09-01T07:00:00Z",
+        "default_view": "modules",
+        "enrollment_term_id": 37410000000000315,
+        "is_public": null,
+        "grading_standard_id": null,
+        "root_account_id": 37410000000000001,
+        "uuid": "X1ldfqze92Or2d8TETGEzGahNPacb5m5bXoRcqka",
+        "license": null,
+        "grade_passback_setting": null,
+        "end_at": null,
+        "public_syllabus": false,
+        "public_syllabus_to_auth": false,
+        "storage_quota_mb": 4718,
+        "is_public_to_auth_users": false,
+        "homeroom_course": false,
+        "course_color": null,
+        "friendly_name": null,
+        "apply_assignment_group_weights": false,
+        "calendar": {
+            "ics": "https://canvas.instructure.com/feeds/calendars/course_X1ldfqze92Or2d8TETGEzGahNPacb5m5bXoRcqka.ics"
+        },
+        "time_zone": "America/Los_Angeles",
+        "blueprint": false,
+        "template": false,
+        "enrollments": [
+            {
+                "type": "student",
+                "role": "StudentEnrollment",
+                "role_id": 37410000000000006,
+                "user_id": 37410000000009377,
+                "enrollment_state": "active",
+                "limit_privileges_to_course_section": false,
+                "computed_current_grade": null,
+                "computed_current_score": 97.14,
+                "computed_current_letter_grade": null,
+                "computed_final_grade": null,
+                "computed_final_score": 12.25
+            },
+            {
+                "type": "student",
+                "role": "StudentEnrollment",
+                "role_id": 37410000000000006,
+                "user_id": 37410000000009377,
+                "enrollment_state": "active",
+                "limit_privileges_to_course_section": false,
+                "computed_current_grade": null,
+                "computed_current_score": 97.14,
+                "computed_current_letter_grade": null,
+                "computed_final_grade": null,
+                "computed_final_score": 12.25
+            }
+        ],
+        "hide_final_grades": false,
+        "workflow_state": "available",
+        "restrict_enrollments_to_course_dates": false
+    },
+    {
+        "id": 37410000000008629,
+        "access_restricted_by_date": true
+    },
+    {
+        "id": 37410000000010933,
+        "access_restricted_by_date": true
+    },
+    {
+        "id": 37410000000010913,
+        "access_restricted_by_date": true
+    }
+]
