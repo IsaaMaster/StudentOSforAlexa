@@ -42,10 +42,10 @@
                 "enrollment_state": "active",
                 "limit_privileges_to_course_section": false,
                 "computed_current_grade": null,
-                "computed_current_score": 94.39,
+                "computed_current_score": 67.39,
                 "computed_current_letter_grade": null,
                 "computed_final_grade": null,
-                "computed_final_score": 94.39
+                "computed_final_score": 67.39
             }
         ],
         "hide_final_grades": false,
@@ -95,10 +95,10 @@
                 "enrollment_state": "active",
                 "limit_privileges_to_course_section": false,
                 "computed_current_grade": "A",
-                "computed_current_score": 88.44,
+                "computed_current_score": 54.44,
                 "computed_current_letter_grade": "A",
                 "computed_final_grade": "A",
-                "computed_final_score": 88.44
+                "computed_final_score": 54.44
             }
         ],
         "hide_final_grades": false,
@@ -152,10 +152,10 @@
                 "enrollment_state": "active",
                 "limit_privileges_to_course_section": false,
                 "computed_current_grade": null,
-                "computed_current_score": 97.14,
+                "computed_current_score": 56.14,
                 "computed_current_letter_grade": null,
                 "computed_final_grade": null,
-                "computed_final_score": 12.25
+                "computed_final_score": 56.25
             },
             {
                 "type": "student",
@@ -165,10 +165,10 @@
                 "enrollment_state": "active",
                 "limit_privileges_to_course_section": false,
                 "computed_current_grade": null,
-                "computed_current_score": 97.14,
+                "computed_current_score": 78.14,
                 "computed_current_letter_grade": null,
                 "computed_final_grade": null,
-                "computed_final_score": 12.25
+                "computed_final_score": 78.25
             }
         ],
         "hide_final_grades": false,
