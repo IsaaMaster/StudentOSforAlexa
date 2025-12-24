@@ -1,1 +1,1 @@
-# CanvasForAlexa
+# StudentOS for Alexa
