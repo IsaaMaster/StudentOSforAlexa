@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from grades import getGrade, mockCourseData
+from httpx import get
+from grades import getGrade, mockCourseData, getClassData
 
 
 app = FastAPI()
@@ -9,7 +10,7 @@ def get_course_grade(course_name: str):
     """
     Endpoint to get the grade for a specific course by name.
     """
-    classData = mockCourseData()
+    classData = getClassData()
     grade = getGrade(course_name, classData)
     if grade is None:
         return {"error": "Course not found"}

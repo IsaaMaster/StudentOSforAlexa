@@ -12,7 +12,8 @@ CANVAS_API_URL = "https://canvas.instructure.com/api/v1/"
 def main():
     # classData = getClassData()
     classData = mockCourseData()
-    print(getGrade("acting", classData))
+    # print(getGrade("acting", classData))
+    # print(getAllAssignments())
 
 
 def getClassData():
@@ -25,6 +26,16 @@ def getClassData():
     response = requests.get(f"{CANVAS_API_URL}/courses?include[]=total_scores", headers=headers)
     return response.json()
 
+
+def getAllAssignments():
+    """
+    Fetches all assignments from the Canvas API.
+    """
+    headers = {
+        "Authorization": f"Bearer {CANVAS_AUTH_SECRET}"
+    }
+    response = requests.get(f"{CANVAS_API_URL}/planner/items", headers=headers)
+    return response.json()
 
 def getGrades(course_data):
     """
@@ -51,7 +62,6 @@ def findCourseMatch(course_name, course_data):
     Uses fuzzy matching to find the best matching course name from the provided course data.
     """
     course_names = [course['name'] for course in course_data if 'enrollments' in course]
-    print(course_names)
     best_match = process.extractOne(course_name, course_names, scorer=fuzz.token_sort_ratio)
     return best_match[0]
 
