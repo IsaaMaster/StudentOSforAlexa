@@ -13,7 +13,7 @@ def main():
     # classData = getClassData()
     classData = mockCourseData()
     # print(getGrade("acting", classData))
-    # print(getAllAssignments())
+    print(getAllAssignments())
 
 
 def getClassData():

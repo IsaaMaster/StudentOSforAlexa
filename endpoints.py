@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from httpx import get
-from grades import getGrade, mockCourseData, getClassData
+from grades import getGrade, mockCourseData, getClassData, getAllAssignments
 
 
 app = FastAPI()
@@ -16,6 +16,14 @@ def get_course_grade(course_name: str):
         return {"error": "Course not found"}
     
     return {"course_name": course_name, "grade": grade}
+
+@app.get("/canvas/assignments")
+def get_all_assignments():
+    """
+    Endpoint to get all assignments from the Canvas API.
+    """
+    assignments = getAllAssignments()
+    return {"assignments": assignments}
 
 @app.get("/")
 def read_root():
